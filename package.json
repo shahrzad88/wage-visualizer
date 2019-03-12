@@ -1,0 +1,28 @@
+{
+  "name": "wage-visualization",
+  "version": "1.0.0",
+  "description": "An Open Tool To Understand the Canadian Job Market.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahrzad88/wage-visualization.git"
+  },
+  "keywords": [
+    "Wage",
+    "Visualization",
+    "Canada",
+    "Cost",
+    "of",
+    "living",
+    "Chart"
+  ],
+  "author": "Shahrzad, Joseph, Catherin, Perry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shahrzad88/wage-visualization/issues"
+  },
+  "homepage": "https://github.com/shahrzad88/wage-visualization#readme"
+}

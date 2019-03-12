@@ -1,0 +1,11 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#bubble {
+    font-size: 22px;
+    font-weight: bold;
+}
