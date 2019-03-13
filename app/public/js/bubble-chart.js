@@ -1,5 +1,5 @@
 window.onload = function() {
-  new Chart(document.getElementById("donut"), {
+  new Chart(document.getElementById("bubbleChart"), {
     type: 'doughnut',
     data: {
       labels: ["Green", "Others"],
