@@ -27,6 +27,7 @@
   "homepage": "https://github.com/shahrzad88/wage-visualization#readme",
   "dependencies": {
     "chart.js": "^2.7.3",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "react-chartjs-2": "^2.7.4"
   }
 }
