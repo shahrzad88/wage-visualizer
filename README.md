@@ -1,4 +1,4 @@
-# wage-visualization
+# wage-visualizer
 
 INTRODUCTION
 ------------
@@ -14,10 +14,11 @@ a mongoDB database.
 
 DEPENDENCIES
 ------------
-React.js
-Node.js
+* React.js
+* Node.js
 
-npm modules:
+Node Modules
+------------
 
  * D3 (https://github.com/weknowinc/react-bubble-chart-d3)
  * Express (https://www.npmjs.com/package/express)
