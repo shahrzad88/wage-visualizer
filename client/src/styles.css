@@ -1,0 +1,11 @@
+.NavBar a, .NavBar button {
+	margin: 0 5px;
+	cursor: pointer;
+	color: white;
+}
+
+.NavBar {
+	margin-bottom: 20px;
+	color: white;
+	font-size: 35px;
+}

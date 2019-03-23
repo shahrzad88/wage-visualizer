@@ -1,0 +1,19 @@
+body {
+	height: 100%;
+	background-image: url('../images/world-map-green.png'),url('../images/ocean.png');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: black;
+	/* margin: auto; */
+	margin: 0;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	z-index: 0;
+  }
+
+  input {
+	  color: white;
+	  font: 300px;
+  }
