@@ -18,6 +18,7 @@ class LogIn extends React.Component {
 	onFormSubmit(evt) {
 		evt.preventDefault()
 		//for now
+		this.setState({ fields: { email: 'shahrzad', password: 'ttt' } })
 		this.props.onLoginSuccess(true)
 		this.props.history.push('/')
 		/*
