@@ -52,7 +52,7 @@ class WageMap extends React.Component {
                 if (!data) { return; }
                 // tooltip content
                 return ['<div class="hoverinfo">',
-                    '<strong>', geo.properties.name, '</strong>',
+                    '<strong>', data.iso, '</strong>',
                     '<br>Count: <strong>', data.numberOfThings, '</strong>',
                     '</div>'].join('');
             }

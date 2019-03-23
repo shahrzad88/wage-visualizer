@@ -17,4 +17,4 @@ usersRouter.route('/:id')
 	.patch(usersCtrl.update)
 	.delete(usersCtrl.destroy)
 
-module.exports = usersRouter
+module.exports = usersRouter;

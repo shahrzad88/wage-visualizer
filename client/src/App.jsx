@@ -15,7 +15,7 @@ class App extends React.Component {
     data: [["MB", 75], ["SK", 43], ["AB", 50], ["BC", 88], ["NU", 21],
       ["NT", 43], ["YT", 21], ["ON", 19], ["QC", 60], ["NB", 4], ["NS", 44],
       ["NF", 38], ["PE", 67]]
-  }
+    }
 
 	onLoginSuccess(user) {
 		this.setState({
@@ -29,7 +29,8 @@ class App extends React.Component {
 	}
 	
 	render() {
-		const { currentUser } = this.state
+		const { currentUser } = this.state.currentUser;
+		const { data } = this.state.data;
 		return (
 			<div className='appContainer'>
 				<Switch>
