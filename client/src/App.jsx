@@ -11,7 +11,7 @@ import './css/styles.css'
 
 class App extends React.Component {
 	state = { 
-    currentUser: httpClient.getCurrentUser(),
+    currentUser: 'sherri',//httpClient.getCurrentUser(),
     data: [["MB", 75], ["SK", 43], ["AB", 50], ["BC", 88], ["NU", 21],
       ["NT", 43], ["YT", 21], ["ON", 19], ["QC", 60], ["NB", 4], ["NS", 44],
       ["NF", 38], ["PE", 67]]
@@ -41,20 +41,16 @@ class App extends React.Component {
 					<Route path="/signup" render={(props) => {
 						return <div className='mainImage'><NavBar currentUser={currentUser} /><SignUp {...props} onSignUpSuccess={this.onLoginSuccess.bind(this)} /></div>
 					}} />
-					<Route path="/wagemap" render={() => {
-						return currentUser
-							? <div style={{width: '100%', height: '100%', backgroundColor: 'black'}}><NavBar currentUser={currentUser} /><WageMap data={this.state.data}/></div>
-							: <Redirect to="/login" />
+					<Route path="/wagemap" render={(props) => {
+						return <div style={{width: '100%', height: '100%', backgroundColor: 'black'}}><NavBar currentUser={currentUser}/><WageMap data={this.state.data}/></div>	
 					}} />
 					<Route path="/" render={() => {
-						return <div className='mainImage'><NavBar currentUser={currentUser} /><Home/></div>
+						return <div className='mainImage'><NavBar currentUser={currentUser}/><Home/></div>
 					}} />
 				</Switch>
 			</div>
 		)
 	}
-
-
 }
 
 export default App

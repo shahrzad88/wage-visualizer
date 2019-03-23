@@ -14,6 +14,7 @@ const NavBar = (props) => {
 				)
 				: (
 					<span>
+						<Link to="/wagemap">Wage Map</Link>
 						<Link to="/login">Log In</Link>
 						<Link to="/signup">Sign Up</Link>
 					</span>
