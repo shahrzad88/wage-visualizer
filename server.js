@@ -1,7 +1,8 @@
 const
 	dotenv = require('dotenv').load(),
 	express = require('express'),
-	app = express(),
+    app = express(),
+    path = require('path'),
 	logger = require('morgan'),
 	bodyParser = require('body-parser'),
 	mongoose = require('mongoose'),
@@ -16,6 +17,7 @@ mongoose.connect(MONGODB_URI, { useNewUrlParser: true }, (err) => {
 	console.log(err || `Connected to MongoDB.`)
 })
 
+app.use(express.static(path.join(__dirname, '/client/public')));
 app.use(express.static(`${__dirname}/client/build`))
 app.use(logger('dev'))
 app.use(bodyParser.json())
@@ -25,7 +27,12 @@ app.get('/api', (req, res) => {
 })
 
 app.use('/api/users', usersRoutes)
-
+app.get('/faveicon.ico', function(req, res) {
+    console.log("GET the icon file.");
+    res
+        .status(200)
+        .sendFile(path.join(__dirname, '/client/public/favicon.ico'));
+});
 app.use('*', (req, res) => {
 	res.sendFile(`${__dirname}/client/build/index.html`)
 })
