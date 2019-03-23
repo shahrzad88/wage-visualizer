@@ -29,37 +29,32 @@ class App extends React.Component {
 	render() {
 		const { currentUser } = this.state
 		return (
-			<div className='App container'>
-
-				<NavBar currentUser={currentUser} />
-
+			<div className='appContainer'>
 				<Switch>
-
 					<Route path="/login" render={(props) => {
-						return <LogIn {...props} onLoginSuccess={this.onLoginSuccess.bind(this)} />
+						return <div className='mainImage'><NavBar currentUser={currentUser} /><LogIn {...props} onLoginSuccess={this.onLoginSuccess.bind(this)}/></div>
 					}} />
-
 					<Route path="/logout" render={(props) => {
-						return <LogOut onLogOut={this.logOut.bind(this)} />
+						return <div className='mainImage'><NavBar currentUser={currentUser} /><LogOut onLogOut={this.logOut.bind(this)} /></div>
 					}} />
-
 					{/* the sign up component takes an 'onSignUpSuccess' prop which will perform the same thing as onLoginSuccess: set the state to contain the currentUser */}
 					<Route path="/signup" render={(props) => {
-						return <SignUp {...props} onSignUpSuccess={this.onLoginSuccess.bind(this)} />
+						return <div className='mainImage'><NavBar currentUser={currentUser} /><SignUp {...props} onSignUpSuccess={this.onLoginSuccess.bind(this)} /></div>
 					}} />
-
 					<Route path="/wagemap" render={() => {
 						return currentUser
-							? <WageMap data={this.state.data}/>
+							? <div style={{width: '100%', height: '100%', backgroundColor: 'black'}}><NavBar currentUser={currentUser} /><WageMap data={this.state.data}/></div>
 							: <Redirect to="/login" />
 					}} />
-
-					<Route path="/" component={Home} />
-
+					<Route path="/" render={() => {
+						return <div className='mainImage'><NavBar currentUser={currentUser} /><Home/></div>
+					}} />
 				</Switch>
 			</div>
 		)
 	}
+
+
 }
 
 export default App

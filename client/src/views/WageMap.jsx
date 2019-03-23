@@ -79,7 +79,7 @@ class WageMap extends React.Component {
   }
   render() {
     return (
-      <div className='Wage-Map'>
+      <div className='Wage-Map' style={{height: "100%", width: "100%"}}>
         <h1>Welcome to the Wage Visualizer!</h1>
         <div id="cloropleth_map" style={{height: "100%", width: "100%"}}></div>
       </div>);
