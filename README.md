@@ -10,7 +10,7 @@ a mongoDB database.
 
  * For a full description of the Wage Visualizer, visit the project page:
    https://github.com/shahrzad88/wage-visualization
-   //Heroku URL
+   https://wagemap.herokuapp.com/
 
 DEPENDENCIES
 ------------
@@ -26,6 +26,9 @@ Node Modules
  * Mongojs (https://www.npmjs.com/package/mongojs/v/0.9.2?activeTab=readme)
  * Google Passport.js (http://www.passportjs.org/docs/google)
  * csvtojson (https://www.npmjs.com/package/csvtojson)
+ * datamaps (https://www.npmjs.com/package/datamaps)
+ * d3-geo (https://www.npmjs.com/package/d3-geo)
+ * axios (https://www.npmjs.com/package/axios)
 
 INSTALLATION
 ------------
