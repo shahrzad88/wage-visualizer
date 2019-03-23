@@ -25,9 +25,7 @@ class WageMap extends React.Component {
 
     // create color palette function
     // color can be whatever you wish
-    let paletteScale = d3.scaleLinear()
-        .domain([minValue, maxValue])
-        .range(["#EFEFFF", "#02386F"]); // blue color
+    let paletteScale = d3.scaleLinear().domain([minValue, maxValue]).range(["#EFEFFF", "#02386F"]); // blue color
 
     // fill dataset in appropriate format
     this.props.data.forEach(function (item) { //
@@ -52,7 +50,7 @@ class WageMap extends React.Component {
                 if (!data) { return; }
                 // tooltip content
                 return ['<div class="hoverinfo">',
-                    '<strong>', data.iso, '</strong>',
+                    '<strong>', 'BC' , '</strong>',
                     '<br>Count: <strong>', data.numberOfThings, '</strong>',
                     '</div>'].join('');
             }
