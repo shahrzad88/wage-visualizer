@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@weknow/react-bubble-chart-d3": "^1.0.11",
     "axios": "^0.18.0",
     "d3-geo": "^1.11.3",
     "jwt-decode": "^2.2.0",

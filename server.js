@@ -25,7 +25,7 @@ app.get('/api', (req, res) => {
 	res.json({message: "API root."})
 })
 app.use('/api/users', usersRoutes)
-app.get('/favicon.ico', function(req, res) {
+app.get('/api/favicon.ico', function(req, res) {
     console.log("GET the icon file.");
     res
         .status(200)
