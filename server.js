@@ -10,12 +10,19 @@ const
     csv = require('csvtojson'),
 	MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/wage-visualizer',
 	PORT = process.env.PORT || 3001,
-	usersRoutes = require('./routes/users.js')
+    usersRoutes = require('./routes/users.js')//,
+    //routes = require("./routes")
 
 mongoose.set('useCreateIndex', true)
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true }, (err) => {
 	console.log(err || `Connected to MongoDB.`)
 })
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+// Serve up static assets (usually on heroku)
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static("client/build"));
+  }
 
 app.use(express.static(`${__dirname}/client/public`));
 app.use(express.static(`${__dirname}/client/build`))
