@@ -21,6 +21,7 @@
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.2",
+    "cross-env": "^5.2.0",
     "csvtojson": "^2.0.8",
     "d3": "^5.9.2",
     "datamaps": "^0.5.9",
