@@ -6,7 +6,7 @@ const
 	bodyParser = require('body-parser'),
 	mongoose = require('mongoose'),
 	mongojs = require("mongojs"),
-	csv = require('csvtojson'),
+    csv = require('csvtojson'),
 	MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/wage-visualizer',
 	PORT = process.env.PORT || 3001,
 	usersRoutes = require('./routes/users.js')
