@@ -144,6 +144,17 @@ function getCost(inputA, inputB) {
     })
 };
 
+var city = 'toronto';
+var job = 'web developer';
+console.log(city ,'min salary');
+getMin(city, job);
+console.log(city ,'max salary');
+getMax(city,job);
+console.log(city ,'medium salary');
+getMed(city, job);
+console.log(city ,'cost of living');
+getCost(city, job);
+
 app.listen(PORT, (err) => {
 	console.log(err || `Server running on port ${PORT}.`)
 })
