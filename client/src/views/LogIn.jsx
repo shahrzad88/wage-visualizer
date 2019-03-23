@@ -17,11 +17,11 @@ class LogIn extends React.Component {
 
 	onFormSubmit(evt) {
 		evt.preventDefault()
-		//for now
+		/* for now
 		this.setState({ fields: { email: 'shahrzad', password: 'ttt' } })
 		this.props.onLoginSuccess(true)
 		this.props.history.push('/')
-		/*
+		*/
 		httpClient.logIn(this.state.fields).then(user => {
 			this.setState({ fields: { email: '', password: '' } })
 			if(user) {
@@ -29,7 +29,7 @@ class LogIn extends React.Component {
 				this.props.history.push('/')
 			}
 		})
-		*/
+		
 	}
 	
 	render() {

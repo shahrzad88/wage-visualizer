@@ -11,7 +11,7 @@ import './css/styles.css'
 
 class App extends React.Component {
 	state = { 
-    currentUser: 'sherri',//httpClient.getCurrentUser(),
+    currentUser: httpClient.getCurrentUser(), //sherri@gmail.com
     data: [["MB", 75], ["SK", 43], ["AB", 50], ["BC", 88], ["NU", 21],
       ["NT", 43], ["YT", 21], ["ON", 19], ["QC", 60], ["NB", 4], ["NS", 44],
       ["NF", 38], ["PE", 67]]
@@ -19,7 +19,7 @@ class App extends React.Component {
 
 	onLoginSuccess(user) {
 		this.setState({
-			currentUser: 'sherri'//httpClient.getCurrentUser()
+			currentUser: httpClient.getCurrentUser() //sherri@gmail.com
 		})
 	}
 

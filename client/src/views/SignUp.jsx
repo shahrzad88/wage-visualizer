@@ -18,10 +18,10 @@ class SignUp extends React.Component {
 
 	onFormSubmit(evt) {
 		evt.preventDefault()
-		//for now
+		/*for now
 		this.props.onSignUpSuccess(true)
 		this.props.history.push('/')
-		/*
+		*/
 		httpClient.signUp(this.state.fields).then(user => {
 			this.setState({ fields: { name: '', email: '', password: '' } })
 			if(user) {
@@ -29,7 +29,7 @@ class SignUp extends React.Component {
 				this.props.history.push('/')
 			}
 		})
-		*/
+		
 	}
 	
 	render() {
