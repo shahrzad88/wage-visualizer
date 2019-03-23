@@ -9,8 +9,7 @@ The raw csv files contain over 60,000 rows and 10 columns which is cleaned and s
 a mongoDB database.
 
  * For a full description of the Wage Visualizer, visit the project page:
-   https://github.com/shahrzad88/wage-visualization
-   https://wagemap.herokuapp.com/
+   https://wage-visualizer.herokuapp.com/
 
 DEPENDENCIES
 ------------
